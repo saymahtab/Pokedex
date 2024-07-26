@@ -4,26 +4,23 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = ({ pokemonName, handleChange }) => {
     return (
-        <header className='navbar bg-[#F08030] p-4'>
-            <div className='flex justify-start items-center'>
-                <div className="icon">
-                    <img src="poke.png" alt="Pokémon Icon" className='icon-image h-12 m-2 mx-6' />
-                </div>
-                <div className="heading">
-                    <h1 className='text-5xl font-bold text-white'>Pokedex</h1>
+        <header className='navbar fixed flex-wrap w-full h-28 flex justify-between max-md:h-20'>
+            <div className=''>
+                <div className="pokemon ml-9 mt-3">
+                    <img src="Pokedex_logo.png" alt="img" className='h-24 max-md:h-12 max-md:mx-auto' />
                 </div>
             </div>
-            <div className="relative search-container mx-6 w-full max-w-md h-12 mt-4">
+            <div className="relative search-container w-2/6 h-12 mr-20 mt-10 max-md:mt-2 max-md:ml-4 max-md:w-full max-md:mx-5">
                 <input
                     type="search"
                     placeholder="Search Pokémon"
-                    className="search-input w-full h-full rounded-full px-12 pl-10 pr-4 outline-none"
+                    className="search-input h-full w-full rounded-full px-12 pl-10 pr-4 outline-none max-md:h-8"
                     value={pokemonName}
                     onChange={handleChange}
                 />
                 <FontAwesomeIcon
                     icon={faSearch}
-                    className="search-icon absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-400"
+                    className="search-icon absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-400 max-md:top-4"
                 />
             </div>
         </header>
