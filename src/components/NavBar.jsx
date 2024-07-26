@@ -5,8 +5,8 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 const NavBar = ({ pokemonName, handleChange }) => {
     return (
         <header className='navbar fixed flex-wrap w-full h-28 flex justify-between max-md:h-20'>
-            <div className=''>
-                <div className="pokemon ml-9 mt-3">
+            <div>
+                <div className="pokemon ml-20 mt-3 max-md:ml-28">
                     <img src="Pokedex_logo.png" alt="img" className='h-24 max-md:h-12 max-md:mx-auto' />
                 </div>
             </div>

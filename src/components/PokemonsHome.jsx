@@ -20,7 +20,7 @@ const PokemonsHome = ({pokemon, pokemonName, loading, typeColors}) => {
               
                 return (
                     <Link key={pokemon.id} to={`/pokemon/${pokemon.id}`}>
-                        <div className="pokemon-card w-60 m-4 mt-0 p-5 max-md:p-2 rounded-3xl max-md:w-36 max-md:h-32 max-md:m-1 max-md:mt-0"
+                        <div className="pokemon-card w-60 m-4 mt-0 p-5 max-md:p-2 rounded-3xl max-md:w-36 max-md:h-32 max-md:m-2 max-md:mt-2"
                              style={{ backgroundColor: bgColor }}>
                             <div className="poki-data text-center flex flex-col items-center w-full">
                                 <div className="poki-name]">
