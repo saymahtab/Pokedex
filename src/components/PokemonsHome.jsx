@@ -23,7 +23,7 @@ const PokemonsHome = ({pokemon, pokemonName, loading, typeColors}) => {
                         <div className="pokemon-card w-60 m-4 mt-0 p-5 max-md:p-2 rounded-3xl max-md:w-36 max-md:h-32 max-md:m-2 max-md:mt-2"
                              style={{ backgroundColor: bgColor }}>
                             <div className="poki-data text-center flex flex-col items-center w-full">
-                                <div className="poki-name]">
+                                <div className="poki-name">
                                     <h2 className="text-gray-800 font-bold text-3xl capitalize mb-1 max-md:text-sm max-md:mb-0">{pokemon.name}</h2>
                                 </div>
                                 <div className="poki-type flex flex-wrap justify-center gap-2 mb-1 p-5 max-md:p-1 max-md:mb-0">
